@@ -2,16 +2,19 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <carousel msg="Welcome to Your Vue.js App" />
+    <!-- <carousel2 /> -->
   </div>
 </template>
 
 <script>
 import carousel from "./components/carousel.vue";
+import carousel2 from "./components/carousel2.vue";
 
 export default {
   name: "app",
   components: {
-    carousel
+    carousel,
+    carousel2
   }
 };
 </script>
