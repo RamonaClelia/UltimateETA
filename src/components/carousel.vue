@@ -1,6 +1,7 @@
 <template>
   <div class="container">
-    <div v-for="item1 in txt_array" :key="item1.txt+'A'">
+    <div class=cont_car>
+     <div v-for="item1 in txt_array" :key="item1.txt+'A'">
       <carline v-if="item1.poz==0" :txt="item1.txt" :poz="item1.poz"></carline>
     </div>
     <div v-for="item2 in txt_array" :key="item2.txt+'B'">
@@ -15,7 +16,8 @@
     <div v-for="item5 in txt_array" :key="item5.txt+'E'">
       <carline v-if="item5.poz==4" :txt="item5.txt" :poz="item5.poz"></carline>
     </div>
-    <br />
+    </div>
+    
     <img alt="Vue logo" class="btn_img" src="../assets/push.png" @click="move_all()"/> 
   </div>
 </template>
@@ -93,10 +95,21 @@ export default {
 .btn_img{
     width: 50vmin;
     max-width: 75px;
+        margin: 20px 0px;
 }
 .btn_img:hover{
-      background-image: radial-gradient(teal 20%, #dbefef 60%, transparent 60% );
-      
+      background-image: radial-gradient(teal 20%, #dbefef 60%, transparent 60% );     
      transform: scale(1.1);
+}
+.container{
+  border: 10px solid gray;
+  border-style: outset;
+}
+.cont_car{
+    border: 2px solid #359898;
+    border-style: double;
+    background-color: darkcyan;
+    border-radius: 5px;
+  
 }
 </style>
