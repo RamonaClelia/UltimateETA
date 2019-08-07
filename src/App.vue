@@ -2,24 +2,24 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <carousel msg="Welcome to Your Vue.js App" />
-    <!-- <carousel2 /> -->
   </div>
 </template>
 
 <script>
 import carousel from "./components/carousel.vue";
-import carousel2 from "./components/carousel2.vue";
 
 export default {
   name: "app",
   components: {
-    carousel,
-    carousel2
+    carousel
   }
 };
 </script>
 
 <style>
+body {
+  background-color: whitesmoke;
+}
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
