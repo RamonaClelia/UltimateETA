@@ -35,18 +35,7 @@ export default {
   props: {},
   data() {
     return {
-      options: [
-        "4h",
-        "6h",
-        "8h",
-        "End of day",
-        "1 day",
-        "1-2 days",
-        "2 days",
-        "2-3 days",
-        "End of week",
-        "Early next week"
-      ],
+      options,
       txt_array: [],
       topResults: []
     };
