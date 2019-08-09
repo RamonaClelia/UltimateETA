@@ -2,16 +2,20 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <carousel msg="Welcome to Your Vue.js App" />
+    <catcont />
   </div>
 </template>
 
 <script>
 import carousel from "./components/carousel.vue";
+import catcont from "./components/catcont.vue";
+
 
 export default {
   name: "app",
   components: {
-    carousel
+    carousel,
+    catcont
   }
 };
 </script>
